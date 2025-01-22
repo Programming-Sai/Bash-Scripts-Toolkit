@@ -61,24 +61,24 @@ Each script is designed for a specific task. Below is a detailed description of 
 
   - If no arguments are provided, defaults to "Made some modifications" for the Git commit message.
 
-> [!NOTE] 
+> [!NOTE]
 > In your `package.json` file, in the `scripts` section, it must look something like this.
 
-  ```json
-        "scripts": {
-            "dev": "<dev-command>",
-            "build": "<build-command>",
-            "preview": "<preview-command>",
-            "predeploy": "npm run build",
-            "deploy": "gh-pages -d <output-folder> -b <branch-name> -m \"${npm_config_message:-Updates}\""
-        },
-  ```
+```json
+      "scripts": {
+          "dev": "<dev-command>",
+          "build": "<build-command>",
+          "preview": "<preview-command>",
+          "predeploy": "npm run build",
+          "deploy": "gh-pages -d <output-folder> -b <branch-name> -m \"${npm_config_message:-Updates}\""
+      },
+```
 
-  > also, you must have `gh-pages` installed as a devDependency, like this:
+> also, you must have `gh-pages` installed as a devDependency, like this:
 
-  ```bash
-    npm install gh-pages --save-dev
-  ```
+```bash
+  npm install gh-pages --save-dev
+```
 
 ---
 
@@ -183,3 +183,5 @@ If you write additional scripts, place them in the repository and update the REA
 Feel free to fork, modify, and contribute improvements! Open a pull request with detailed descriptions of your changes.
 
 ---
+
+<!-- TODO: Would add a script to make a file callable from anywhere on the system: using chmod and sudo mv to /usr/local/bin/script-name -->
