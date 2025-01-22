@@ -1,7 +1,3 @@
-Here's the updated **README** file:
-
----
-
 # Bash-Scripts-Toolkit
 
 A collection of Bash scripts designed to automate and simplify common tasks for system management, development workflows, and other automation needs. These scripts are reusable and ideal for saving time and improving productivity when working on projects.
@@ -65,7 +61,7 @@ Each script is designed for a specific task. Below is a detailed description of 
 
   - If no arguments are provided, defaults to "Made some modifications" for the Git commit message.
 
-  > [!NOTE]
+  > [!NOTE] 
   > In your `package.json` file, in the `scripts` section, it must look something like this.
 
   ```json
