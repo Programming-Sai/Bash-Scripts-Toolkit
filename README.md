@@ -61,8 +61,8 @@ Each script is designed for a specific task. Below is a detailed description of 
 
   - If no arguments are provided, defaults to "Made some modifications" for the Git commit message.
 
-  > [!NOTE] 
-  > In your `package.json` file, in the `scripts` section, it must look something like this.
+> [!NOTE] 
+> In your `package.json` file, in the `scripts` section, it must look something like this.
 
   ```json
         "scripts": {
