@@ -146,6 +146,21 @@ Here's how you can format the new section for your tool using the provided forma
 
 ---
 
+### **6. Create and Activate Python Virtual Environments**
+
+- **File Name:** `pythonVenv.sh`
+- **Description:**
+  Creates a Python virtual environment in the specified directory or defaults to `.venv` if no directory is provided. The script also outputs instructions for activating the virtual environment manually since activation cannot persist across script executions.
+- **Usage:**
+
+  ```bash
+  source ./pythonVenv.sh <directory_name>
+  ```
+
+  - If `<directory_name>` is not provided, the virtual environment will be created in `.venv`.
+
+---
+
 ## Why These Scripts Exist
 
 1. **Efficiency:**
