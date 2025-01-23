@@ -157,6 +157,45 @@ Here's how you can format the new section for your tool using the provided forma
 
 ---
 
+### **7. Globalizing Bash Scripts**
+
+#### **Script Name:** `globalize.sh`
+
+Make any Bash script globally executable from anywhere on your system by adding it to `/usr/local/bin`.
+
+#### **Usage:**
+
+```bash
+./globalize.sh <path-to-script>
+```
+
+- **`<path-to-script>`:** Path to the script you want to globalize.
+
+#### **Example:**
+
+1. Create `hello.sh`:
+   ```bash
+   echo "Hello, World!"
+   ```
+2. Run:
+   ```bash
+   ./globalize.sh hello.sh
+   ```
+3. Use globally:
+   ```bash
+   hello
+   ```
+   Output: `Hello, World!`
+
+---
+
+#### **Notes:**
+
+- Requires `sudo` privileges for `/usr/local/bin`.
+- Handles conflicts if a script with the same name exists.
+
+---
+
 ## Why These Scripts Exist
 
 1. **Efficiency:**
@@ -183,5 +222,3 @@ If you write additional scripts, place them in the repository and update the REA
 Feel free to fork, modify, and contribute improvements! Open a pull request with detailed descriptions of your changes.
 
 ---
-
-<!-- TODO: Would add a script to make a file callable from anywhere on the system: using chmod and sudo mv to /usr/local/bin/script-name -->
