@@ -183,6 +183,11 @@ Make any Bash script globally executable from anywhere on your system by adding 
    ```
    Output: `Hello, World!`
 
+#### **Notes:**
+
+- Requires `sudo` privileges for `/usr/local/bin`.
+- Handles conflicts if a script with the same name exists.
+
 ---
 
 ### **8. Empty Folder Adder**
@@ -197,12 +202,7 @@ Make any Bash script globally executable from anywhere on your system by adding 
   - Automatically adds a `.gitkeep` file to any empty directories it finds within the current directory.
 ---
 
-#### **Notes:**
 
-- Requires `sudo` privileges for `/usr/local/bin`.
-- Handles conflicts if a script with the same name exists.
-
----
 
 ## Why These Scripts Exist
 
