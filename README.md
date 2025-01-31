@@ -108,10 +108,6 @@ Each script is designed for a specific task. Below is a detailed description of 
 
 ---
 
-Here's how you can format the new section for your tool using the provided format:
-
----
-
 ### **5. Git Project Setup Tool**
 
 - **File Name:** `gitProjectSetup.sh`
@@ -187,6 +183,18 @@ Make any Bash script globally executable from anywhere on your system by adding 
    ```
    Output: `Hello, World!`
 
+---
+
+### **8. Empty Folder Adder**
+
+- **File Name:** `emptyFolderAdder.sh`
+- **Description:**
+  Searches for empty directories in the current directory and adds a `.gitkeep` file to them. This ensures that empty folders are tracked by Git, as Git doesn't normally track empty directories.
+- **Usage:**
+  ```bash
+  ./emptyFolderAdder.sh
+  ```
+  - Automatically adds a `.gitkeep` file to any empty directories it finds within the current directory.
 ---
 
 #### **Notes:**
